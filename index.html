@@ -17,7 +17,7 @@
     <header>
       <nav class="container main-nav">
         <a href="./index.html" class="logo">
-          <span class="logo__blue">Web</span>Studio
+          <span class="logo__text-web">Web</span>Studio
         </a>
 
         <ul class="site-nav list">
@@ -155,7 +155,7 @@
       </section>
 
       <!--Члены команды-->
-      <section class="section-top section-top__content">
+      <section class="section-top section-top__bgc">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
 
@@ -493,8 +493,8 @@
       <div class="container footer-flex">
         <div class="footer-address">
           <a href="./index.html" class="logo footer">
-            <span class="logo__blue">Web</span
-            ><span class="logo__white">Studio</span>
+            <span class="logo__text-web">Web</span
+            ><span class="logo__text-studio">Studio</span>
           </a>
           <address class="adress">
             <p class="adress__text">г. Киев, пр-т Леси Украинки, 26</p>
@@ -518,7 +518,7 @@
                 href="https://www.instagram.com/?hl=ru"
                 aria-label="ссылка Инстаграм"
               >
-                <svg class="social-icon__img social-icon__img--wite">
+                <svg class="social-icon__img social-icon__img--white">
                   <use href="./images/sprite1.svg#icon-instagram"></use>
                 </svg>
               </a>
@@ -530,7 +530,7 @@
                 href="https://twitter.com/?lang=ru"
                 aria-label="ссылка Твиттер"
               >
-                <svg class="social-icon__img social-icon__img--wite">
+                <svg class="social-icon__img social-icon__img--white">
                   <use href="./images/sprite1.svg#icon-twitter"></use>
                 </svg>
               </a>
@@ -542,7 +542,7 @@
                 href="https://www.facebook.com/"
                 aria-label="ссылка Фейсбук"
               >
-                <svg class="social-icon__img social-icon__img--wite">
+                <svg class="social-icon__img social-icon__img--white">
                   <use href="./images/sprite1.svg#icon-facebook"></use>
                 </svg>
               </a>
@@ -553,7 +553,7 @@
                 class="social-icon__link"
                 href="https://www.linkedin.com/"
                 aria-label="ссылка Линкедин"
-                ><svg class="social-icon__img social-icon__img--wite">
+                ><svg class="social-icon__img social-icon__img--white">
                   <use href="./images/sprite1.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -590,52 +590,52 @@
         <button
           data-modal-close
           aria-label="закрыть модальное окно"
-          class="modal-btn"
+          class="modal__btn"
         >
-          <svg class="modal-icon">
+          <svg class="modal__icon">
             <use href="./images/sprite1.svg#icon-close"></use>
           </svg>
         </button>
 
         <form class="form js-speaker-form">
-          <h2 class="form-caption">Оставьте свои данные, мы вам перезвоним</h2>
+          <h2 class="form__caption">Оставьте свои данные, мы вам перезвоним</h2>
 
-          <ul class="form-field list">
+          <ul class="list">
             <li>
-              <label class="form-label">
+              <label class="form__label">
                 Имя
-                <input class="form-input" type="text" name="user-name" />
-                <svg class="form-icon">
+                <input class="form__input" type="text" name="user-name" />
+                <svg class="form__icon">
                   <use href="./images/sprite1.svg#icon-person-black"></use>
                 </svg>
               </label>
             </li>
 
             <li>
-              <label class="form-label">
+              <label class="form__label">
                 Телефон
-                <input class="form-input" type="tel" name="user-tel" />
-                <svg class="form-icon">
+                <input class="form__input" type="tel" name="user-tel" />
+                <svg class="form__icon">
                   <use href="./images/sprite1.svg#icon-phone-black"></use>
                 </svg>
               </label>
             </li>
 
             <li>
-              <label class="form-label">
+              <label class="form__label">
                 Почта
-                <input class="form-input" type="email" name="user-mail" />
-                <svg class="form-icon">
+                <input class="form__input" type="email" name="user-mail" />
+                <svg class="form__icon">
                   <use href="./images/sprite1.svg#icon-email-black"></use>
                 </svg>
               </label>
             </li>
 
             <li>
-              <label class="form-label textarea">
+              <label class="form__label textarea">
                 Комментарий
                 <textarea
-                  class="form-textarea"
+                  class="form__textarea"
                   name="comment"
                   rows="10"
                   placeholder="Введите текст"
@@ -644,13 +644,14 @@
             </li>
           </ul>
 
-          <label class="form-checkbox">
+          <label class="form__checkbox">
             <input class="checkbox" type="checkbox" name="policy" />
-            <span class="checkbox-icon"></span>Соглашаюсь с рассылкой и принимаю
-            <a class="form-link" href="#">Условия договора</a>
+            <span class="checkbox__icon"></span>Соглашаюсь с рассылкой и
+            принимаю
+            <a class="checkbox__link" href="#">Условия договора</a>
           </label>
 
-          <button type="submit" class="button btn-form">Отправить</button>
+          <button type="submit" class="button form__btn">Отправить</button>
         </form>
       </div>
     </div>
