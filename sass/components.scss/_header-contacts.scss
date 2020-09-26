@@ -4,13 +4,15 @@
   margin-left: auto;
 }
 
-.contacts__list:not(:last-child) {
-  margin-right: 50px;
-}
 
 .contacts__list {
   text-align: center;
+
+&:not(:last-child) {
+  margin-right: 50px;
 }
+}
+
 
 .contacts__link {
   font-weight: 500;
@@ -19,12 +21,13 @@
   line-height: 1.1;
   letter-spacing: 0.02em;
   transition: color $transitions;
-}
 
-.contacts__link:hover,
-.contacts__link:focus {
+&:hover,
+&:focus {
   color: $color-accent;
 }
+}
+
 
 .contacts__icon-envelope {
   display: inline-flex;
@@ -36,7 +39,14 @@
   text-align: center;
 
   transition: fill $transitions;
+
+
+.contacts__link:hover &,
+.contacts__link:focus & {
+  fill: $color-accent;
 }
+}
+
 
 .contacts__icon-smartphone {
   display: inline-flex;
@@ -46,11 +56,10 @@
   margin-right: 10px;
   fill: $gray-color-one;
   transition: fill $transitions;
-}
 
-.contacts__link:hover .contacts__icon-smartphone,
-.contacts__link:focus .contacts__icon-smartphone,
-.contacts__link:hover .contacts__icon-envelope,
-.contacts__link:focus .contacts__icon-envelope {
+
+.contacts__link:hover &,
+.contacts__link:focus & {
   fill: $color-accent;
+}
 }

@@ -17,18 +17,18 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border $transitions;
-}
 
-.clients-logo__link:hover,
-.clients-logo__link:focus {
+&:hover,
+&:focus {
   border: 1px solid $color-accent;
+}
 }
 
 .clients-logo__img {
   transition: fill $transitions;
-}
 
-.clients-logo__link:hover .clients-logo__img,
-.clients-logo__link:focus .clients-logo__img {
+.clients-logo__link:hover &,
+.clients-logo__link:focus & {
   fill: $color-accent;
+}
 }

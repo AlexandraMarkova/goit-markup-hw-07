@@ -20,11 +20,11 @@
   background-color: $white-color;
 
   transition: background-color $transitions;
-}
 
-.social-icon__link:hover,
-.social-icon__link:focus {
+&:hover,
+&:focus {
   background-color: $color-accent;
+}
 }
 
 .social-icon__img {
@@ -32,11 +32,11 @@
   height: 20px;
   fill: #afb1b8;
   transition: fill $transitions;
-}
 
-.social-icon__link:hover .social-icon__img,
-.social-icon__link:focus .social-icon__img {
+.social-icon__link:hover &,
+.social-icon__link:focus & {
   fill: $white-color;
+}
 }
 
 .social-icon__link {

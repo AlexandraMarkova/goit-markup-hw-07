@@ -31,15 +31,14 @@
   flex-direction: column;
 
   font-style: normal;
-}
 
-.adress__text {
+&__text {
   margin-top: 0px;
   margin-bottom: 0px;
   margin-bottom: 9px;
 }
 
-.adress__connection {
+&__connection {
   font-weight: 400;
   color: $gray-color-two;
   font-size: 14px;
@@ -47,13 +46,13 @@
   letter-spacing: 0.03em;
   font-style: normal;
 }
+}
 
 /* footer-slogan */
 .footer-slogan {
   margin-right: 93px;
-}
 
-.footer-slogan__text {
+&__text {
   margin-top: 72px;
   margin-bottom: 20px;
 
@@ -62,4 +61,5 @@
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
 }

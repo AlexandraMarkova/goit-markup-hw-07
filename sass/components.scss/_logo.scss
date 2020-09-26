@@ -9,12 +9,12 @@
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-}
 
-.logo__text-web {
+&__text-web {
   color: $color-accent;
 }
 
-.logo__text-studio {
+&__text-studio {
   color: $white-color;
+}
 }

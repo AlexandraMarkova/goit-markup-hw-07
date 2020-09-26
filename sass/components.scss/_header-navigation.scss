@@ -4,13 +4,15 @@
   display: flex;
 }
 
+
 .site-nav {
   display: flex;
-}
 
-.site-nav__list:not(:last-child) {
+&__list:not(:last-child) {
   margin-right: 50px;
 }
+}
+
 
 .site-nav__link {
   position: relative;
@@ -25,18 +27,18 @@
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color $transitions;
-}
 
-.site-nav__link:hover,
-.site-nav__link:focus {
+&:hover,
+&:focus {
   color: $color-accent;
 }
+}
+
 
 .site-nav__link--current {
   color: $color-accent;
-}
 
-.site-nav__link--current::after {
+&::after {
   position: absolute;
 
   content: '';
@@ -47,4 +49,5 @@
   border-radius: 2px;
   left: 0;
   bottom: 0;
+}
 }
